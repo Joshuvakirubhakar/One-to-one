@@ -40,7 +40,8 @@ public class LaptopServiceImpl implements LaptopServices {
 		laptop.setName(dto.getName());
 		laptop.setBrand(dto.getBrand());
 		lapRepo.save(laptop);
-		return laptop.toString()+" is saved successfully !!! ";
+//		return laptop.toString()+" is saved successfully !!! ";
+		return "LaptopID: "+laptop.getId().toString()+" is saved successfully !!! ";
 	}
 
 	@Override
