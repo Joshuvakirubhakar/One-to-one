@@ -26,7 +26,8 @@ public class LaptopServiceImpl implements LaptopServices {
 		for (Laptop laptop : laptops) {
 			LapResponse lapResponse = new LapResponse();
 			lapResponse.setId(laptop.getId());
-			lapResponse.setLaptop(laptop.getName());
+//			lapResponse.setLaptop(laptop.getName());
+			lapResponse.setLaptop(laptop.getBrand().getLaptop().getName());
 			lapResponse.setBrand(laptop.getBrand().getName());
 			lapResponses.add(lapResponse);
 		}
