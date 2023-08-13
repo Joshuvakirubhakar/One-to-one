@@ -28,5 +28,6 @@ public class Laptop {
 	
 	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	@JoinColumn(name = "brand_id")
+	@JoinColumn(name = "brand_id")              /*	"brand_id"(fk) references "id"(pk) coulmn in brands */
 	private Brands brand;
 }
